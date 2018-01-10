@@ -1,0 +1,363 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom */
+
+body {
+	background-color: #000000;
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.flex-container {
+	display: flex;
+    align-items: center;
+}
+
+header {
+	background-color: #111111;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 20px 0;
+	color: #ffffff;
+	font-size: 0;
+}
+
+.logo {
+	width: 45%;
+	display: inline-block;
+	font-size: 17px;
+}
+
+.logo .sub-logo {
+	font-size: 12px;
+}
+
+.nav {
+	width: 55%;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+.nav li {
+	font-size: 14px;
+	padding-bottom: 2px;
+}
+
+.nav a, .red-link a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav a:hover, .red-link a:hover {
+	cursor: pointer;
+	border-bottom: 2px solid #d13f4a;
+}
+
+.title-block {
+	padding: 100px 0;
+	color: #ffffff;
+	text-align: center;
+}
+
+.title-block .red-block {
+	display: inline-block;
+	font-size: 15px;
+	padding: 5px 10px;
+	background-color: #d13f4a;
+	text-transform: uppercase; 
+	
+}
+
+.title-block .title {
+	display: inline-block;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 10px 20px;
+	background-color: #111111;
+	text-transform: uppercase; 
+}
+
+.title-block .sub-title {
+	display: inline-block;
+	background-color: #0a0908;
+	padding: 5px 10px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.left-block {
+	display: inline-block;
+	width: 700px;
+	background-color: #ffffff;
+	padding: 10px;
+	color: #484848;
+	font-size: 0;
+}
+article {
+	margin-bottom: 20px;
+}
+.left-block .block-title {
+	background-color: #f3f3f3;
+	color: #999999;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 20px;
+	text-transform: uppercase;
+	border-right: 5px solid #d13f4a;
+}
+
+.left-block .article-image {
+	margin: 10px 0 20px 0;
+}
+
+.left-block .article-left {
+	display: inline-block;
+	width: 20%;
+	font-size: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.left-block .article-left div {
+	width: 75px;
+	padding: 5px;
+	font-size: 9px;
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: flex-start;
+}
+
+.article-left .red-block {
+	background-color:#d13f4a;
+}
+.article-left .user-block {
+	background-color:#469134;
+}
+.article-left .twitter-block {
+	background-color:#24cedd;
+}
+.article-left .thumbsup-block {
+	background-color:#2f81c0;
+}
+.article-left .red-block.more {
+	padding: 10px 5px;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+.left-block .article-right {
+	display: inline-block;
+	width: 80%;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.article-right .article-title {
+	font-size: 21px;
+	padding-left: 20px;
+	border-left: 2px solid #d13f4a;
+}
+
+.article-right .article-text {
+	font-style: italic;
+	font-size: 13px;
+	padding-left: 20px;
+	margin-top: 10px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
+.right-block {
+	display: inline-block;
+	width: 290px;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 0px 10px;
+}
+
+.right-block .block-title {
+	color: #999999;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	border-right: 2px solid #d13f4a;
+	background-color: #181818;
+	margin: 10px 0;
+}
+
+.right-block div {
+
+}
+
+.right-block .row {
+	padding: 5px 0;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-block .row .row-right {
+	text-align: right;
+}
+
+.right-block .grey {
+	background-color: #0c0c0c;
+	margin: 0 -10px 0 -10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.divisions .red-link {
+	line-height: 1.3;
+    text-align: right;
+	color: #d13f4a;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.m-top-10 {
+	margin-top: 10px;
+}
+
+.gallery .images {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.gallery .images img {
+	margin-bottom: 5px;
+}
+
+.streams .stream {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-style: italic;
+	font-size: 10px;
+	padding: 5px 0;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.stream .red-text {
+	color: #d13f4a;
+	font-size: 13px;
+	font-style: normal;
+}
+
+.stream .stream-game {
+	font-size: 13px;
+	font-style: normal;
+}
+
+.center {
+	text-align: center;
+}
+
+.twit {
+	font-style: italic;
+	font-size: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.twit .twit-image {
+	width: 37px;
+    height: 37px;
+}
+
+.twit .twit-text {
+	width: 220px;
+
+}
+
+.twit .row {
+	padding-bottom:0;
+	font-size: 10px;
+}
+
+.preloader {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.preloader div {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.load1 {
+	background-color: #c2c2c2;
+	border-radius: 3px;
+}
+.load2 {
+	background-color: #a8a8a8;
+	border-radius: 3px;
+}
+.load3 {
+	background-color: #8f8f8f;
+	border-radius: 3px;
+}
