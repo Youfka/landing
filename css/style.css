@@ -50,7 +50,7 @@ body {
 	background-color: #000000;
 	background-image: url('../images/background.png');
 	background-repeat: no-repeat;
-	font-family: 'Proxima Nova', Georgia, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -70,6 +70,7 @@ header {
 	padding: 20px 0;
 	color: #ffffff;
 	font-size: 0;
+	font-weight: 600;
 }
 
 .logo {
@@ -116,7 +117,7 @@ header {
 	padding: 5px 10px;
 	background-color: #d13f4a;
 	text-transform: uppercase; 
-	
+	font-weight: 600;
 }
 
 .title-block .title {
@@ -180,6 +181,7 @@ article {
     justify-content: space-between;
     margin-bottom: 5px;
     align-items: flex-start;
+    font-weight: 600;
 }
 
 .article-left .red-block {
@@ -197,7 +199,7 @@ article {
 .article-left .red-block.more {
 	padding: 10px 5px;
 	font-size: 10px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 
 .left-block .article-right {
@@ -207,13 +209,14 @@ article {
 	vertical-align: top;
 }
 
-.article-right .article-title {
+.left-block .article-right .article-title {
 	font-size: 21px;
 	padding-left: 20px;
 	border-left: 2px solid #d13f4a;
+	font-weight: 600;
 }
 
-.article-right .article-text {
+.left-block .article-right .article-text {
 	font-style: italic;
 	font-size: 13px;
 	padding-left: 20px;
@@ -239,10 +242,7 @@ article {
 	border-right: 2px solid #d13f4a;
 	background-color: #181818;
 	margin: 10px 0;
-}
-
-.right-block div {
-
+	font-weight: 800;
 }
 
 .right-block .row {
@@ -252,6 +252,7 @@ article {
 	display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
 }
 
 .right-block .row .row-right {
@@ -302,11 +303,13 @@ article {
 	color: #d13f4a;
 	font-size: 13px;
 	font-style: normal;
+	font-weight: 600;
 }
 
 .stream .stream-game {
 	font-size: 13px;
 	font-style: normal;
+	font-weight: 600;
 }
 
 .center {
